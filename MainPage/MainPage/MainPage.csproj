@@ -119,6 +119,11 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\AmsterdamCity.cs" />
+    <Compile Include="Models\Appartment.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\LondonCity.cs" />
+    <Compile Include="Models\ParisCity.cs" />
     <Compile Include="Paris.xaml.cs">
       <DependentUpon>Paris.xaml</DependentUpon>
     </Compile>
@@ -200,6 +205,9 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.0.1</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
