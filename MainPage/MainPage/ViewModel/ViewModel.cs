@@ -9,6 +9,6 @@ namespace MainPage.ViewModel
 {
     class ViewModel
     {
-
+            
     }
 }

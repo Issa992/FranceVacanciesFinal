@@ -15,7 +15,7 @@ namespace MainPage.Models
         public ObservableCollection<Customer> CustomersList { get; set; }
         public ObservableCollection<Appartment> ParisApartments { get; set; }
         public ObservableCollection<Appartment> LondonApartments { get; set; }
-        public ObservableCollection<Appartment> AmsterdamApartments { get; set}
+        public ObservableCollection<Appartment> AmsterdamApartments { get; set; }
 
         public void AddCustomer(string firstname, string lastname, string mail)
         {
