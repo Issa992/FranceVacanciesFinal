@@ -92,6 +92,12 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AdminControls.xaml.cs">
+      <DependentUpon>AdminControls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLoginPage.xaml.cs">
+      <DependentUpon>AdminLoginPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Amsterdam.xaml.cs">
       <DependentUpon>Amsterdam.xaml</DependentUpon>
     </Compile>
@@ -145,6 +151,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AdminControls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminLoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Amsterdam.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
