@@ -6,8 +6,169 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <ContinuumNavigationTransitionInfo/>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+    <SplitView x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" 
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock/>
-    </Grid>
+               CompactPaneLength="50" OpenPaneLength="150" RenderTransformOrigin="0.5,0.5">
+        <SplitView.Background>
+            <ImageBrush ImageSource="Photos/final France Logo.jpg" Stretch="UniformToFill">
+                <ImageBrush.RelativeTransform>
+                    <CompositeTransform/>
+                </ImageBrush.RelativeTransform>
+            </ImageBrush>
+        </SplitView.Background>
+        <SplitView.BorderBrush>
+            <ImageBrush Stretch="Fill"/>
+        </SplitView.BorderBrush>
+
+        <SplitView.Pane>
+
+            <StackPanel>
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="30,5" StartPoint="0.5,0" Opacity="0.5">
+                        <GradientStop Color="#FF114F4D" Offset="0.046"/>
+                        <GradientStop Color="#FF778C8C" Offset="0.285"/>
+                        <GradientStop Color="#FFAAC8C7" Offset="0.081"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="MenuButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"
+
+                        Width="52" Height="50" Background="Transparent" Click="View" AutomationProperties.HelpText="" AutomationProperties.Name="" TabNavigation="Cycle"/>
+                    <TextBlock Text="Cities" FontSize="22" VerticalAlignment="Center" Width="100" FontFamily="Calibri" FontWeight="Bold" FontStyle="Italic"
+                               Foreground="#FFA1CDC0" />
+                </StackPanel>
+
+
+
+                <StackPanel Orientation="Horizontal">
+
+                    <Button x:Name="MenuButton1" FontFamily="Segoe MDL2 Assets" Content="" Click="HyperlinkButton_Click"
+
+                            Width="50" Height="50">
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="Photos/Flag_map_of_Greater_France.png"/>
+                        </Button.Background>
+                    </Button>
+
+                    <TextBlock Text="Paris" FontSize="18" VerticalAlignment="Center" Foreground="#FF9EFFE2" />
+
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+
+                    <Button x:Name="MenuButton2" FontFamily="Segoe MDL2 Assets" Content="" Click="HyperlinkButton_Click1"
+
+                            Width="49" Height="56">
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="Photos/592px-Flag_map_of_the_Dutch_Language.png"/>
+                        </Button.Background>
+                    </Button>
+
+                    <TextBlock Text="Amsterdam" FontSize="18" VerticalAlignment="Center" Foreground="#FF9EFFE2"/>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+
+                    <Button x:Name="MenuButton3" FontFamily="Segoe MDL2 Assets" Content="" Click="HyperlinkButton_Click2"
+
+                            Width="52" Height="60">
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="Photos/united-kingdom.png"/>
+                        </Button.Background>
+                    </Button>
+
+                    <TextBlock Text="London" FontSize="18" VerticalAlignment="Center" Foreground="#FF9EFFE2" />
+
+                </StackPanel>
+
+            </StackPanel>
+
+        </SplitView.Pane>
+
+        <SplitView.Content>
+
+            <Grid Margin="0,-10,0,10">
+                <Grid.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </Grid.Background>
+
+                <CalendarDatePicker HorizontalAlignment="Left" Margin="73,10,0,0" VerticalAlignment="Top" Height="32" Width="212" PlaceholderText="Departure" IsTodayHighlighted="False" BorderThickness="0" BorderBrush="#FFF2F2F2">
+                    <CalendarDatePicker.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFE9E0E0" Offset="0"/>
+                            <GradientStop Color="#FFF9F9F9" Offset="1"/>
+                            <GradientStop Color="White" Offset="1"/>
+                            <GradientStop Color="#FFC4E9E1" Offset="0.03"/>
+                        </LinearGradientBrush>
+
+                    </CalendarDatePicker.Background>
+                </CalendarDatePicker>
+                <CalendarDatePicker HorizontalAlignment="Left" Margin="338,10,0,0" VerticalAlignment="Top" Height="32" Width="186" PlaceholderText="Arrival" CalendarIdentifier="JulianCalendar" BorderThickness="0">
+
+                    <CalendarDatePicker.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+
+                            <GradientStop Color="#FF087662" Offset="0"/>
+                            <GradientStop Color="#FFA57DD6" Offset="1"/>
+                        </LinearGradientBrush>
+                    </CalendarDatePicker.BorderBrush>
+                    <CalendarDatePicker.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFE9E0E0" Offset="0"/>
+                            <GradientStop Color="#FFF9F9F9" Offset="1"/>
+                            <GradientStop Color="White" Offset="1"/>
+                            <GradientStop Color="#FFC4E9E1" Offset="0.03"/>
+                        </LinearGradientBrush>
+
+                    </CalendarDatePicker.Background>
+                </CalendarDatePicker>
+                <TextBlock HorizontalAlignment="Left" Margin="73,83,0,0" TextWrapping="Wrap" Text="Adults" VerticalAlignment="Top"
+                           Foreground="#FFF1B97F"/>
+                <TextBlock HorizontalAlignment="Left" Margin="73,137,0,0" TextWrapping="Wrap" Text="Children
+                           " VerticalAlignment="Top" Foreground="#FFF1B97F"/>
+                <ComboBox Margin="157,78,0,0" x:Name="ComboBox1" HorizontalAlignment="Left"   
+                    VerticalAlignment="Top" Width="24" Height="30" AutomationProperties.Name="000000" BorderThickness="1" BorderBrush="#6600EEA6">
+                    <ComboBoxItem Content="1"/>
+                    <ComboBoxItem Content="2"/>
+                    <ComboBoxItem Content="3"/>
+                    <ComboBoxItem Content="4"/>
+                    <ComboBoxItem Content="5"/>
+                    <ComboBoxItem Content="6"/>
+                    <ComboBoxItem Content="7"/>
+                    <ComboBoxItem Content="8"/>
+                    <ComboBoxItem Content="9"/>
+                    <ComboBoxItem Content="10"/>
+                </ComboBox>
+                <Button HorizontalAlignment="Left" Margin="311,123,0,0" VerticalAlignment="Top" FontFamily="Segoe MDL2 Assets" Content="&#xE716;" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF87C895" Height="44"/>
+                <Button HorizontalAlignment="Left" Margin="226,69,0,0" VerticalAlignment="Top" FontFamily="Segoe MDL2 Assets" Content="&#xE77B;" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF87C895" Height="44"/>
+                <ToggleSwitch Header="" HorizontalAlignment="Left" Margin="157,123,0,0" VerticalAlignment="Top" Height="55" Width="97" Foreground="White"/>
+                <Button Content="Searsh" HorizontalAlignment="Left" Margin="548,10,0,0" VerticalAlignment="Top" Height="32" BorderThickness="0">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFE9E0E0" Offset="0"/>
+                            <GradientStop Color="#FFF9F9F9" Offset="1"/>
+                            <GradientStop Color="White" Offset="1"/>
+                            <GradientStop Color="#FF76CDBA" Offset="0.03"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Content="Button" HorizontalAlignment="Left" Margin="608,254,0,0" VerticalAlignment="Top" Height="150" Width="323" Click="Button_Click"/>
+
+            </Grid>
+
+        </SplitView.Content>
+
+    </SplitView>
+
+
 </Page>

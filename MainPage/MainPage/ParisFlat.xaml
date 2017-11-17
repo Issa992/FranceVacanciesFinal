@@ -1,0 +1,77 @@
+﻿<Page
+    x:Class="MainPage.ParisFlat"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MainPage"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <ContinuumNavigationTransitionInfo/>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+    <Page.TopAppBar>
+        <AppBar IsOpen="False" Foreground="#FFF7F7F7">
+            <AppBar.Background>
+                <LinearGradientBrush EndPoint="30,5" StartPoint="0.5,0" Opacity="0.5">
+                    <GradientStop Color="#FF114F4D" Offset="0.046"/>
+                    <GradientStop Color="#FF778C8C" Offset="0.285"/>
+                    <GradientStop Color="#FFAAC8C7" Offset="0.081"/>
+
+
+                </LinearGradientBrush>
+            </AppBar.Background>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="949*"/>
+                    <ColumnDefinition Width="503*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal">
+                    <Button Width="115" Height="80"  Click="HyperlinkButton_Click1" FontFamily="Segoe MDL2 Assets" Content="&#xE80F;" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White"/>
+                    <Button  Width="140" Height="80" Click="Button_Click" 
+                             Background="{x:Null}" BorderBrush="{x:Null}"
+                             FontFamily="Segoe MDL2 Assets" Content="&#xE707;" FontSize="24" Foreground="White"/>
+                    <Button Content="Page 2" Width="140" Height="80" Click="AppBarButton_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White"/>
+
+                </StackPanel>
+            </Grid>
+        </AppBar>
+    </Page.TopAppBar>
+
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Photos/france/paris_france_height_city_sky_711_3840x2400.jpg"/>
+        </Grid.Background>
+
+
+        <ListView  
+            x:Name="DestinationImage"
+            
+            ItemsSource="{}" 
+            Height="361" Margin="217,171,145,0" VerticalAlignment="Top"
+                  ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                  ScrollViewer.HorizontalScrollMode="Enabled"                  
+                  ScrollViewer.VerticalScrollMode="Disabled" 
+                  Visibility="Visible"
+                  HorizontalAlignment="Stretch" Opacity="0.98"
+                  IsItemClickEnabled="True"
+                   ShowsScrollingPlaceholders="False"
+                   >
+            <!--<ListView.DataContext>
+                <ViewModel:ApartmentList/>
+            </ListView.DataContext>-->
+            <StackPanel Orientation="Horizontal" ScrollViewer.VerticalScrollBarVisibility="Hidden" Height="329" Width="1017">
+                <Image Source="{}"></Image>
+                <TextBlock Text="{}"></TextBlock>
+            </StackPanel>
+        </ListView>
+
+
+    </Grid>
+</Page>
