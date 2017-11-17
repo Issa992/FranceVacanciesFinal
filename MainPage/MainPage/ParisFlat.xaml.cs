@@ -30,7 +30,8 @@ namespace MainPage
 
         private void HyperlinkButton_Click1(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
+            Frame.GoBack();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -56,6 +57,11 @@ namespace MainPage
                 imageAnimation.TryStart(DestinationImage);
 
             }
+        }
+
+        private void DestinationImage_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

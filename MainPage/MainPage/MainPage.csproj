@@ -98,6 +98,7 @@
     <Compile Include="AmsterdamFlat.xaml.cs">
       <DependentUpon>AmsterdamFlat.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Apartament.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -119,6 +120,7 @@
     <Compile Include="ParisFlat.xaml.cs">
       <DependentUpon>ParisFlat.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Uk.xaml.cs">
       <DependentUpon>Uk.xaml</DependentUpon>
@@ -131,6 +133,28 @@
     <None Include="MainPage_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Photos\592px-Flag_map_of_the_Dutch_Language.png" />
+    <Content Include="Photos\amsterdam_netherlands_building_river_high-rise_hdr_47890_3840x2400.jpg" />
+    <Content Include="Photos\ApartamentPhotos\1.jpg" />
+    <Content Include="Photos\ApartamentPhotos\interior_flat_house_creative_white_11104_3840x2400.jpg" />
+    <Content Include="Photos\ApartamentPhotos\la_house_interior_fireplace_picture_room_seat_luxury_fire_piano_table_31441_3840x2400.jpg" />
+    <Content Include="Photos\ApartamentPhotos\login.jpg" />
+    <Content Include="Photos\ApartamentPhotos\paper_vase_sofa_design_interior_fireplace_painting_apartment_room_chair_lamp_plant_style_table_cup_31419_3840x2400.jpg" />
+    <Content Include="Photos\ApartamentPhotos\room_chair_fireplace_interior_design_modernity_66311_3840x2400.jpg" />
+    <Content Include="Photos\ApartamentPhotos\room_interior_design_style_design_furniture_modern_69900_3840x2400.jpg" />
+    <Content Include="Photos\ApartamentPhotos\sofa_design_interior_design_apartment_room_brown_chair_bed_lamps_pillows_style_table_31489_3840x2400.jpg" />
+    <Content Include="Photos\ApartamentPhotos\sofa_design_interior_design_apartment_room_brown_chair_bed_pillows_style_fruit_31487_3840x2400.jpg" />
+    <Content Include="Photos\ApartamentPhotos\sofa_design_interior_design_apartment_room_red_chair_style_31490_3840x2400.jpg" />
+    <Content Include="Photos\cannes_20.jpg" />
+    <Content Include="Photos\final France Logo.jpg" />
+    <Content Include="Photos\Flag_map_of_Greater_France.png" />
+    <Content Include="Photos\london_big_ben_night_river_building_top_view_black_white_30804_1920x1200.jpg" />
+    <Content Include="Photos\london_bridge_big_ben_black_white_skyscrapers_9658_3840x2400.jpg" />
+    <Content Include="Photos\lyon-immobilier-neuf-01.jpg" />
+    <Content Include="Photos\maxresdefault.jpg" />
+    <Content Include="Photos\paris_france_height_city_sky_711_3840x2400.jpg" />
+    <Content Include="Photos\smoke_triangle_lilac_85490_3840x2400.jpg" />
+    <Content Include="Photos\united-kingdom.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

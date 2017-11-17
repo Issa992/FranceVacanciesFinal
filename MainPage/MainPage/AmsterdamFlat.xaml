@@ -6,6 +6,44 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <ContinuumNavigationTransitionInfo/>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+
+    <Page.TopAppBar>
+        <AppBar IsOpen="False" Foreground="#FFF7F7F7">
+            <AppBar.Background>
+                <LinearGradientBrush EndPoint="30,5" StartPoint="0.5,0" Opacity="0.5">
+                    <GradientStop Color="#FF114F4D" Offset="0.046"/>
+                    <GradientStop Color="#FF778C8C" Offset="0.285"/>
+                    <GradientStop Color="#FFAAC8C7" Offset="0.081"/>
+
+
+                </LinearGradientBrush>
+            </AppBar.Background>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="949*"/>
+                    <ColumnDefinition Width="503*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal">
+                    <Button Width="115" Height="80"  Click="HyperlinkButton_Click1" FontFamily="Arial" Content="Back" FontSize="24" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}"/>
+                    <Button  Width="140" Height="80" Click="Button_Click" 
+                             Background="{x:Null}" BorderBrush="{x:Null}"
+                             FontFamily="Segoe MDL2 Assets" Content="&#xE707;" FontSize="24" Foreground="White"/>
+                    <Button Content="Page 2" Width="140" Height="80" Click="AppBarButton_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White"/>
+
+                </StackPanel>
+            </Grid>
+        </AppBar>
+    </Page.TopAppBar>
+
+
+
     <Grid>
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Photos/amsterdam_netherlands_building_river_high-rise_hdr_47890_3840x2400.jpg"/>
@@ -14,7 +52,6 @@
         <ListView  
             x:Name="DestinationImageAm"
             
-            ItemsSource="" 
             Height="361" Margin="53,71,309,0" VerticalAlignment="Top"
             ScrollViewer.HorizontalScrollBarVisibility="Hidden"
             ScrollViewer.HorizontalScrollMode="Enabled"                  

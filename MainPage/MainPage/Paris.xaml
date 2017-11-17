@@ -36,7 +36,7 @@
                     <Button  Width="140" Height="80" Click="Button_Click" 
                             Background="{x:Null}" BorderBrush="{x:Null}"
                             FontFamily="Segoe MDL2 Assets" Content="&#xE707;" FontSize="24" Foreground="White"/>
-                    <Button Content="More Photos" Width="140" Height="80" Click="apoop" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" />
+                    <Button Content="More Info" Width="140" Height="80" Click="apoop" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" />
 
                 </StackPanel>
             </Grid>
@@ -114,7 +114,7 @@
 
             HorizontalAlignment="Left" Height="798" 
             Margin="10,192,0,0" VerticalAlignment="Top" Width="391"
-            ItemsSource="{}"
+
             SelectedItem="{}" SelectionChanged="DestinationImagee_SelectionChanged">
             <ListView.ItemTemplate>
                 <DataTemplate>

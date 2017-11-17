@@ -47,7 +47,7 @@ namespace MainPage
 
         private void AppBarButton_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigatToLondonFlat();
         }
 
         private void NavigatToLondonFlat()

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Devices.Enumeration;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -55,6 +56,7 @@ namespace MainPage
         {
 
             ConnectedAnimationService.GetForCurrentView().PrepareToAnimate("image", DestinationImage);
+            
             Frame.Navigate(typeof(ParisFlat));
         }
 
@@ -68,7 +70,7 @@ namespace MainPage
 
         private void apoop(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            NavigatToParisFlat();
         }
 
         private void DestinationImagee_SelectionChanged(object sender, SelectionChangedEventArgs e)

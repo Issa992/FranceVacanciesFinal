@@ -46,5 +46,20 @@ namespace MainPage
 
             }
         }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void HyperlinkButton_Click1(object sender, RoutedEventArgs e)
+        {
+            Frame.GoBack();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

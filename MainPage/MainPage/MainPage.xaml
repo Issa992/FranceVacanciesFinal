@@ -162,7 +162,7 @@
                         </LinearGradientBrush>
                     </Button.Background>
                 </Button>
-                <Button Content="Button" HorizontalAlignment="Left" Margin="608,254,0,0" VerticalAlignment="Top" Height="150" Width="323" Click="Button_Click"/>
+                <Button Content="Button" HorizontalAlignment="Left" Margin="902,428,0,0" VerticalAlignment="Top" Height="150" Width="323" Click="Button_Click"/>
 
             </Grid>
 
