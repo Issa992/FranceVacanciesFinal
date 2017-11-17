@@ -92,7 +92,7 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="AdminControls.xaml.cs">
+    <Compile Include="View\AdminControls.xaml.cs">
       <DependentUpon>AdminControls.xaml</DependentUpon>
     </Compile>
     <Compile Include="AdminLoginPage.xaml.cs">
@@ -156,7 +156,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="AdminControls.xaml">
+    <Page Include="View\AdminControls.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
