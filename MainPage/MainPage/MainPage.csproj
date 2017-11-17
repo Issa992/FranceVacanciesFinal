@@ -92,6 +92,12 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="View\AdminControls.xaml.cs">
+      <DependentUpon>AdminControls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLoginPage.xaml.cs">
+      <DependentUpon>AdminLoginPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Amsterdam.xaml.cs">
       <DependentUpon>Amsterdam.xaml</DependentUpon>
     </Compile>
@@ -114,6 +120,10 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Appartment.cs" />
+    <Compile Include="Models\Booking.cs" />
+    <Compile Include="Models\Catalog.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Paris.xaml.cs">
       <DependentUpon>Paris.xaml</DependentUpon>
     </Compile>
@@ -125,6 +135,7 @@
     <Compile Include="Uk.xaml.cs">
       <DependentUpon>Uk.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\ViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -169,6 +180,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="View\AdminControls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminLoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Amsterdam.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -211,6 +230,7 @@
       <Version>6.0.1</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

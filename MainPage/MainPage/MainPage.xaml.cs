@@ -61,5 +61,7 @@ namespace MainPage
             this.Frame.Navigate(typeof(CheckOut));
 
         }
+
+      
     }
 }
