@@ -4,16 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
+using System.Runtime.CompilerServices;
+using System.ComponentModel;
 
 namespace MainPage.Models
 {
-    class Catalog
+    class Catalog : INotifyPropertyChanged
     {
       
-        public ObservableCollection<Customer> CustomersList;
-        public ObservableCollection<Appartment> ParisApartments;
-        public ObservableCollection<Appartment> LondonApartments;
-        public ObservableCollection<Appartment> AmsterdamApartments;
+        public ObservableCollection<Customer> CustomersList { get; set; }
+        public ObservableCollection<Appartment> ParisApartments { get; set; }
+        public ObservableCollection<Appartment> LondonApartments { get; set; }
+        public ObservableCollection<Appartment> AmsterdamApartments { get; set}
 
         public void AddCustomer(string firstname, string lastname, string mail)
         {
@@ -56,6 +58,14 @@ namespace MainPage.Models
         {
             Appartment returnedAppartment = LondonApartments.First(x => x.Name == name);
             return returnedAppartment;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        //[NotifyPropertyChangedInvocator]
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
     }
