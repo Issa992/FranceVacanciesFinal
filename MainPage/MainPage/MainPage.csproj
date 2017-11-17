@@ -92,53 +92,53 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="View\AdminControls.xaml.cs">
+    <Compile Include="AdminControls.xaml.cs">
       <DependentUpon>AdminControls.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\AdminLoginPage.xaml.cs">
+    <Compile Include="AdminLoginPage.xaml.cs">
       <DependentUpon>AdminLoginPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\Amsterdam.xaml.cs">
+    <Compile Include="Amsterdam.xaml.cs">
       <DependentUpon>Amsterdam.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\AmsterdamFlat.xaml.cs">
+    <Compile Include="AmsterdamFlat.xaml.cs">
       <DependentUpon>AmsterdamFlat.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\Apartament.cs" />
+    <Compile Include="Apartament.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\BookingPage.xaml.cs">
+    <Compile Include="BookingPage.xaml.cs">
       <DependentUpon>BookingPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\CheckOut.xaml.cs">
+    <Compile Include="CheckOut.xaml.cs">
       <DependentUpon>CheckOut.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\LondonFlat.xaml.cs">
+    <Compile Include="LondonFlat.xaml.cs">
       <DependentUpon>LondonFlat.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MainPage.xaml.cs">
+    <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Appartment.cs" />
     <Compile Include="Models\Booking.cs" />
     <Compile Include="Models\Catalog.cs" />
     <Compile Include="Models\Customer.cs" />
-    <Compile Include="View\Paris.xaml.cs">
+    <Compile Include="Paris.xaml.cs">
       <DependentUpon>Paris.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\ParisFlat.xaml.cs">
+    <Compile Include="ParisFlat.xaml.cs">
       <DependentUpon>ParisFlat.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\Uk.xaml.cs">
+    <Compile Include="Uk.xaml.cs">
       <DependentUpon>Uk.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\ViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <AppxManifest Include="View\Package.appxmanifest">
+    <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="MainPage_TemporaryKey.pfx" />
@@ -180,47 +180,47 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="View\AdminControls.xaml">
+    <Page Include="AdminControls.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\AdminLoginPage.xaml">
+    <Page Include="AdminLoginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\Amsterdam.xaml">
+    <Page Include="Amsterdam.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\AmsterdamFlat.xaml">
+    <Page Include="AmsterdamFlat.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\BookingPage.xaml">
+    <Page Include="BookingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\CheckOut.xaml">
+    <Page Include="CheckOut.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\LondonFlat.xaml">
+    <Page Include="LondonFlat.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MainPage.xaml">
+    <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="View\Paris.xaml">
+    <Page Include="Paris.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\ParisFlat.xaml">
+    <Page Include="ParisFlat.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\Uk.xaml">
+    <Page Include="Uk.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -230,7 +230,9 @@
       <Version>6.0.1</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="View\" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
