@@ -119,11 +119,10 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\AmsterdamCity.cs" />
     <Compile Include="Models\Appartment.cs" />
+    <Compile Include="Models\Booking.cs" />
+    <Compile Include="Models\Catalog.cs" />
     <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\LondonCity.cs" />
-    <Compile Include="Models\ParisCity.cs" />
     <Compile Include="Paris.xaml.cs">
       <DependentUpon>Paris.xaml</DependentUpon>
     </Compile>
@@ -134,6 +133,7 @@
     <Compile Include="Uk.xaml.cs">
       <DependentUpon>Uk.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\ViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -206,9 +206,7 @@
       <Version>6.0.1</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
