@@ -35,7 +35,7 @@ namespace MainPage
 
         private void HyperlinkButton_Click1(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            this.Frame.Navigate(typeof(MainPage));
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

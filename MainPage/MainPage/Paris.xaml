@@ -56,7 +56,7 @@
             <Grid.Background>
                 <ImageBrush Stretch="Fill"/>
             </Grid.Background>
-            <WebView Name="WebBrowser" HorizontalAlignment="Left" Height="758" Margin="505,155,0,0" VerticalAlignment="Top" Width="691"/>
+            <WebView Name="WebBrowser" HorizontalAlignment="Left" Height="588" Margin="505,155,0,0" VerticalAlignment="Top" Width="691"/>
 
         </Grid>
         <CalendarDatePicker HorizontalAlignment="Left" Margin="67,84,0,0" VerticalAlignment="Top" Height="32" Width="212" PlaceholderText="Departure" IsTodayHighlighted="False" BorderThickness="0" BorderBrush="#FFF2F2F2">

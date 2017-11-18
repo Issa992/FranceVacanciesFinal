@@ -52,7 +52,7 @@
         <ListView  
             x:Name="DestinationImageUk"
             
-            Height="361" Margin="691,514,209,0" VerticalAlignment="Top"
+            Height="361" Margin="890,629,10,0" VerticalAlignment="Top"
             ScrollViewer.HorizontalScrollBarVisibility="Hidden"
             ScrollViewer.HorizontalScrollMode="Enabled"                  
             ScrollViewer.VerticalScrollMode="Disabled" 

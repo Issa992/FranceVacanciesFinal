@@ -102,7 +102,7 @@
                     <ImageBrush Stretch="Fill"/>
                 </Grid.Background>
 
-                <CalendarDatePicker HorizontalAlignment="Left" Margin="73,10,0,0" VerticalAlignment="Top" Height="32" Width="212" PlaceholderText="Departure" IsTodayHighlighted="False" BorderThickness="0" BorderBrush="#FFF2F2F2">
+                <CalendarDatePicker HorizontalAlignment="Left" Margin="73,68,0,0" VerticalAlignment="Top" Height="32" Width="212" PlaceholderText="Departure" IsTodayHighlighted="False" BorderThickness="0" BorderBrush="#FFF2F2F2">
                     <CalendarDatePicker.Background>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <GradientStop Color="#FFE9E0E0" Offset="0"/>
@@ -113,7 +113,7 @@
 
                     </CalendarDatePicker.Background>
                 </CalendarDatePicker>
-                <CalendarDatePicker HorizontalAlignment="Left" Margin="338,10,0,0" VerticalAlignment="Top" Height="32" Width="186" PlaceholderText="Arrival" CalendarIdentifier="JulianCalendar" BorderThickness="0">
+                <CalendarDatePicker HorizontalAlignment="Left" Margin="340,68,0,0" VerticalAlignment="Top" Height="32" Width="186" PlaceholderText="Arrival" CalendarIdentifier="JulianCalendar" BorderThickness="0">
 
                     <CalendarDatePicker.BorderBrush>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -132,11 +132,11 @@
 
                     </CalendarDatePicker.Background>
                 </CalendarDatePicker>
-                <TextBlock HorizontalAlignment="Left" Margin="73,83,0,0" TextWrapping="Wrap" Text="Adults" VerticalAlignment="Top"
+                <TextBlock HorizontalAlignment="Left" Margin="73,140,0,0" TextWrapping="Wrap" Text="Adults" VerticalAlignment="Top"
                            Foreground="#FFF1B97F"/>
-                <TextBlock HorizontalAlignment="Left" Margin="73,137,0,0" TextWrapping="Wrap" Text="Children
+                <TextBlock HorizontalAlignment="Left" Margin="73,185,0,0" TextWrapping="Wrap" Text="Children
                            " VerticalAlignment="Top" Foreground="#FFF1B97F"/>
-                <ComboBox Margin="157,78,0,0" x:Name="ComboBox1" HorizontalAlignment="Left"   
+                <ComboBox Margin="157,130,0,0" x:Name="ComboBox1" HorizontalAlignment="Left"   
                     VerticalAlignment="Top" Width="24" Height="30" AutomationProperties.Name="000000" BorderThickness="1" BorderBrush="#6600EEA6">
                     <ComboBoxItem Content="1"/>
                     <ComboBoxItem Content="2"/>
@@ -149,10 +149,13 @@
                     <ComboBoxItem Content="9"/>
                     <ComboBoxItem Content="10"/>
                 </ComboBox>
-                <Button HorizontalAlignment="Left" Margin="311,123,0,0" VerticalAlignment="Top" FontFamily="Segoe MDL2 Assets" Content="&#xE716;" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF87C895" Height="44"/>
-                <Button HorizontalAlignment="Left" Margin="226,69,0,0" VerticalAlignment="Top" FontFamily="Segoe MDL2 Assets" Content="&#xE77B;" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF87C895" Height="44"/>
-                <ToggleSwitch Header="" HorizontalAlignment="Left" Margin="157,123,0,0" VerticalAlignment="Top" Height="55" Width="97" Foreground="White"/>
-                <Button Content="Searsh" HorizontalAlignment="Left" Margin="548,10,0,0" VerticalAlignment="Top" Height="32" BorderThickness="0">
+                <Button HorizontalAlignment="Left" Margin="316,179,0,0" VerticalAlignment="Top" FontFamily="Segoe MDL2 Assets" Content="&#xE716;" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF87C895" Height="44"/>
+                <Button HorizontalAlignment="Left" Margin="241,126,0,0" VerticalAlignment="Top" FontFamily="Segoe MDL2 Assets" Content="&#xE77B;" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF87C895" Height="44"/>
+                <ToggleSwitch Header="" HorizontalAlignment="Left" Margin="157,179,0,0" VerticalAlignment="Top" Height="55" Width="64" Foreground="White"/>
+                
+                <Button Content="Button" HorizontalAlignment="Left" Margin="902,428,0,0" VerticalAlignment="Top" Height="150" Width="323" Click="Button_Click"/>
+
+                <Button Content="Searsh" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" BorderThickness="0" Margin="649,67,0,0">
                     <Button.Background>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <GradientStop Color="#FFE9E0E0" Offset="0"/>
@@ -162,7 +165,17 @@
                         </LinearGradientBrush>
                     </Button.Background>
                 </Button>
-                <Button Content="Button" HorizontalAlignment="Left" Margin="902,428,0,0" VerticalAlignment="Top" Height="150" Width="323" Click="Button_Click"/>
+                <Button Content="Admin" HorizontalAlignment="Left" Margin="758,68,0,0" VerticalAlignment="Top" Click="Button_Click_2">
+                    <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE9E0E0" Offset="0"/>
+                        <GradientStop Color="#FFF9F9F9" Offset="1"/>
+                        <GradientStop Color="White" Offset="1"/>
+                        <GradientStop Color="#FF76CDBA" Offset="0.03"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+                </Button>
+
 
             </Grid>
 
