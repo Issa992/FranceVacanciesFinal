@@ -98,6 +98,10 @@
         <SplitView.Content>
 
             <Grid Margin="0,-10,0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1061*"/>
+                    <ColumnDefinition Width="389*"/>
+                </Grid.ColumnDefinitions>
                 <Grid.Background>
                     <ImageBrush Stretch="Fill"/>
                 </Grid.Background>
@@ -175,7 +179,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
                 </Button>
-
+                <Button Content="Button" HorizontalAlignment="Left" Margin="902,428,0,0" VerticalAlignment="Top" Height="150" Width="323" Click="Button_Click"/>
 
             </Grid>
 

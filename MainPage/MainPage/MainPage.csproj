@@ -92,7 +92,7 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="View\AdminControls.xaml.cs">
+    <Compile Include="AdminControls.xaml.cs">
       <DependentUpon>AdminControls.xaml</DependentUpon>
     </Compile>
     <Compile Include="AdminLoginPage.xaml.cs">
@@ -104,7 +104,6 @@
     <Compile Include="AmsterdamFlat.xaml.cs">
       <DependentUpon>AmsterdamFlat.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Apartament.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -135,6 +134,9 @@
     <Compile Include="Uk.xaml.cs">
       <DependentUpon>Uk.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\AmsterdamCity.cs" />
+    <Compile Include="ViewModel\LondonCity.cs" />
+    <Compile Include="ViewModel\ParisCity.cs" />
     <Compile Include="ViewModel\ViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -180,7 +182,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="View\AdminControls.xaml">
+    <Page Include="AdminControls.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -230,7 +232,9 @@
       <Version>6.0.1</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="View\" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
