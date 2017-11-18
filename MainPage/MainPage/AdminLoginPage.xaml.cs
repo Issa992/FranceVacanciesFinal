@@ -22,13 +22,17 @@ namespace MainPage
     /// </summary>
     public sealed partial class AdminLoginPage : Page
     {
+        string login = "admin";
+        string pass = "admin";
         public AdminLoginPage()
         {
             this.InitializeComponent();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if(LoginTextBox.Text== login && AdminPass.Password == pass)
             Frame.Navigate(typeof(AdminControls));
         }
 

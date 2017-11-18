@@ -20,7 +20,7 @@ namespace MainPage.ViewModel
             ApartmentList = catalog.ParisApartments;
 
         }
-
+        
 
     }
 }

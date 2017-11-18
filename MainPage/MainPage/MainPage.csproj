@@ -123,6 +123,7 @@
     <Compile Include="Models\Booking.cs" />
     <Compile Include="Models\Catalog.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\RelayCommand.cs" />
     <Compile Include="Paris.xaml.cs">
       <DependentUpon>Paris.xaml</DependentUpon>
     </Compile>

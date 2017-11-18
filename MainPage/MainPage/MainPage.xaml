@@ -167,6 +167,7 @@
                     </Button.Background>
                 </Button>
                 <Button Content="Button" HorizontalAlignment="Left" Margin="902,428,0,0" VerticalAlignment="Top" Height="150" Width="323" Click="Button_Click" Grid.ColumnSpan="2"/>
+                <HyperlinkButton x:Name="AdminLoginButton" Content="Admin Login" Grid.Column="1" HorizontalAlignment="Left" Margin="212,688,0,0" VerticalAlignment="Top" Height="32" Click="AdminLoginButton_Click" />
 
             </Grid>
 
