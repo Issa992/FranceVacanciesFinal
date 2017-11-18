@@ -56,11 +56,11 @@
 
         </ListView>
 
-        <Button x:Name="PreviousButton" Grid.Row="1" Width="200" Height="50" Content="Previous" FontSize="28" HorizontalAlignment="Center" Click="PreviousButton_Click" />
-        <Button x:Name="HomeButton" Grid.Row="1" Grid.Column="1" Width="200" Height="50" Content="Home" FontSize="28" HorizontalAlignment="Center" Click="HomeButton_Click" />
+        <Button x:Name="PreviousButton" Grid.Row="1" Width="200" Height="50" Content="Previous" FontSize="28" HorizontalAlignment="Center" Click="PreviousButton_Click" Background="#33293BA2" Foreground="White"/>
+        <Button x:Name="HomeButton" Grid.Row="1" Grid.Column="1" Width="200" Height="50" Content="Home" FontSize="28" HorizontalAlignment="Center" Click="HomeButton_Click" Background="#33293BA2" Foreground="White"/>
         <StackPanel Grid.Row="0" Grid.Column="1">
-            <Button  Width="200" Height="50" Content="Add" FontSize="28" HorizontalAlignment="Center" Margin="0,20"/>
-            <Button  Width="200" Height="50" Content="Remove" FontSize="28" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+            <Button  Width="200" Height="50" Content="Add" FontSize="28" HorizontalAlignment="Center" Margin="0,20" Foreground="White" Background="#33293BA2"/>
+            <Button  Width="200" Height="50" Content="Remove" FontSize="28" HorizontalAlignment="Center" Margin="0,0,0,20" Background="#33293BA2" Foreground="White"/>
             <TextBox PlaceholderText="Name of the apartment" HorizontalAlignment="Center"  Width="200" Height="50" FontSize="16"/>
         </StackPanel>
 

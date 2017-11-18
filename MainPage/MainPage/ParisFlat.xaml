@@ -45,22 +45,32 @@
 
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="387*"/>
+            <RowDefinition Height="420*"/>
+            <RowDefinition Height="193*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="446*"/>
+            <ColumnDefinition Width="495*"/>
+            <ColumnDefinition Width="559*"/>
+        </Grid.ColumnDefinitions>
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="Photos/paris_france_height_city_sky_711_3840x2400.jpg"/>
+            <ImageBrush ImageSource="Photos/paris_france_height_city_sky_711_3840x2400.jpg"/>
         </Grid.Background>
 
 
         <ListView  
             x:Name="DestinationImage"
             
-            Height="361" Margin="736,429,385,0" VerticalAlignment="Top"
+            Height="361" Margin="170,107,-2,-275" VerticalAlignment="Top"
                   ScrollViewer.HorizontalScrollBarVisibility="Hidden"
                   ScrollViewer.HorizontalScrollMode="Enabled"                  
                   ScrollViewer.VerticalScrollMode="Disabled" 
                   Visibility="Visible"
                   HorizontalAlignment="Stretch" Opacity="0.98"
                   IsItemClickEnabled="True"
-                   ShowsScrollingPlaceholders="False" SelectionChanged="DestinationImage_SelectionChanged"
+                   ShowsScrollingPlaceholders="False" SelectionChanged="DestinationImage_SelectionChanged" Grid.Column="2" Grid.Row="2"
                    >
             <!--<ListView.DataContext>
                 <ViewModel:ApartmentList/>
@@ -70,8 +80,8 @@
                 <TextBlock Text="{}"></TextBlock>
             </StackPanel>
         </ListView>
-        <Image HorizontalAlignment="Left" Height="315" Margin="988,52,0,0" VerticalAlignment="Top" Width="415" Source="Photos/ApartamentPhotos/room_chair_fireplace_interior_design_modernity_66311_3840x2400.jpg"/>
-        <Image HorizontalAlignment="Left" Height="315" Margin="512,52,0,0" VerticalAlignment="Top" Width="406" Source="Photos/ApartamentPhotos/room_interior_design_style_design_furniture_modern_69900_3840x2400.jpg"/>
+        <Image HorizontalAlignment="Left" Height="315" Margin="37,52,0,0" VerticalAlignment="Top" Width="415" Source="Photos/ApartamentPhotos/room_chair_fireplace_interior_design_modernity_66311_3840x2400.jpg" Grid.Column="2"/>
+        <Image HorizontalAlignment="Left" Height="315" Margin="31,52,0,0" VerticalAlignment="Top" Width="406" Source="Photos/ApartamentPhotos/room_interior_design_style_design_furniture_modern_69900_3840x2400.jpg" Grid.Column="1"/>
         <Image HorizontalAlignment="Left" Height="315" Margin="10,52,0,0" VerticalAlignment="Top" Width="406" Source="Photos/ApartamentPhotos/sofa_design_interior_design_apartment_room_brown_chair_bed_lamps_pillows_style_table_31489_3840x2400.jpg"/>
 
 

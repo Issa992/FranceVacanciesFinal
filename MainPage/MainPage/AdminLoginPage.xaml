@@ -6,7 +6,17 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Grid Background="White">
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <ContinuumNavigationTransitionInfo/>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Photos/ApartamentPhotos/login.jpg"/>
+        </Grid.Background>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -19,12 +29,12 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Column="1" Grid.Row="1">
-            <TextBlock Text="Administrator Login" FontSize="48" Margin="20,0,0,0" HorizontalAlignment="Center"/>
+            <TextBlock Text="Administrator Login" FontSize="48" Margin="20,0,0,0" HorizontalAlignment="Center" Foreground="White"/>
             <TextBox PlaceholderText="Login" HorizontalAlignment="Center" Margin="0,30,0,10" Width="250" Height="50" FontSize="28"/>
             <PasswordBox PlaceholderText="Password"  HorizontalAlignment="Center" Margin="0,0,0,10" Width="250" Height="50" FontSize="28"/>
             <StackPanel Orientation="Horizontal" Margin="0,30,0,0" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Button Content="Login" Margin="0,0,50,0" Height="50" Width="100" Click="Button_Click" />
-                <Button x:Name="Cancel" Content="Cancel" Height="50" Width="100" Click="Cancel_Click"  />
+                <Button Content="Login" Margin="0,0,50,0" Height="50" Width="100" Click="Button_Click" Foreground="White" Background="#33293BA2"/>
+                <Button x:Name="Cancel" Content="Cancel" Height="50" Width="100" Click="Cancel_Click" Foreground="White" Background="#33293BA2" />
             </StackPanel>
         </StackPanel>
     </Grid>

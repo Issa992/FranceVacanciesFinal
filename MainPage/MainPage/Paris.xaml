@@ -6,6 +6,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush Stretch="Fill"/>
+    </Page.Background>
     <Page.Transitions>
         <TransitionCollection>
             <NavigationThemeTransition>
@@ -26,7 +29,7 @@
 
                 </LinearGradientBrush>
             </AppBar.Background>
-            <Grid>
+            <Grid Margin="0,0,-48,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="949*"/>
                     <ColumnDefinition Width="503*"/>
@@ -47,7 +50,7 @@
     <Grid>
 
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="Photos/maxresdefault.jpg"/>
+            <ImageBrush Stretch="UniformToFill" ImageSource="Photos/maxresdefault.jpg"/>
         </Grid.Background>
         <FlyoutBase.AttachedFlyout>
             <DatePickerFlyout/>
