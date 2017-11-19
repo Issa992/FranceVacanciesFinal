@@ -8,15 +8,15 @@ using MainPage.Models;
 
 namespace MainPage.ViewModel
 {
-    class ParisCity
+    public class ParisCity
     {
-        private ObservableCollection<Appartment> ApartmentList;
+        public ObservableCollection<Appartment> ApartmentList { get; set; }
 
         public ParisCity()
         {   
             Catalog catalog = new Catalog();
             catalog.AddParisApartment("Marina", "The best Apartment in France", 1200,
-                true, true, true, "../assets/Photos/1.jpg");
+                true, true, true, "../Photos/1.jpg");
             ApartmentList = catalog.ParisApartments;
 
         }
