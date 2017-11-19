@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MainPage.Models
 {
-    class Appartment
+    public class Appartment
     {
         public string Name { get; set; }
         public string Description { get; set; }
@@ -32,6 +32,8 @@ namespace MainPage.Models
             IsRented = false;
         }
         #region constructor
+
+        public Appartment() {}
         public Appartment(string name, string description, double price, bool smoking,
             bool animals, bool kids, string image)
         {
@@ -73,5 +75,7 @@ namespace MainPage.Models
             SmokingAllowed = smoking; AnimalAllowed = animals; ImagePath = image;
             
         }
+
+
     }
 }
