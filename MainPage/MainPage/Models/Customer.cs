@@ -8,10 +8,10 @@ namespace MainPage.Models
 {
     class Customer
     {
-        public string FirstName;
-        public string LastName;
-        public string MailAdress;
-        public double MoneySpent;
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string MailAdress { get; set; }
+        public double MoneySpent { get; set; }
         public void UpDate(double moneyspent)
         {
             MoneySpent = +moneyspent;

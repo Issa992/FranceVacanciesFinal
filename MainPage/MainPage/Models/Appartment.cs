@@ -63,10 +63,7 @@ namespace MainPage.Models
             SmokingAllowed = smoking; AnimalAllowed = animals; ImagePath = image;
             OptionalImagePath1 = image1; OptionalImagePath2 = image2; OptionalImagePath3 = image3;
         }
-        public Appartment()
-        {
-
-        }
+        
         #endregion
         public void UpDate(string name, string description, double price, bool smoking,
             bool animals, bool kids, string image)
