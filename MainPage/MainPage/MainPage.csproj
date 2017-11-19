@@ -121,8 +121,8 @@
     </Compile>
     <Compile Include="Models\Appartment.cs" />
     <Compile Include="Models\Booking.cs" />
-    <Compile Include="Models\Catalog.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\RelayCommand.cs" />
     <Compile Include="Paris.xaml.cs">
       <DependentUpon>Paris.xaml</DependentUpon>
     </Compile>
@@ -135,9 +135,6 @@
     <Compile Include="Uk.xaml.cs">
       <DependentUpon>Uk.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\AmsterdamCity.cs" />
-    <Compile Include="ViewModel\LondonCity.cs" />
-    <Compile Include="ViewModel\ParisCity.cs" />
     <Compile Include="ViewModel\ViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
