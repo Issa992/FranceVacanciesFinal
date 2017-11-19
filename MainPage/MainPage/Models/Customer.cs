@@ -22,6 +22,7 @@ namespace MainPage.Models
             LastName = lastname;
             MailAdress = mail;
         }
+        public Customer() { }
         public void UpDate(string firstname, string lastname, string mail)
         {
             FirstName = firstname;

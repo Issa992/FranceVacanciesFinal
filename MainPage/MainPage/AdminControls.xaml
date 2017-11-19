@@ -2,7 +2,7 @@
     x:Class="MainPage.AdminControls"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:MainPage"
+    xmlns:local="using:MainPage.ViewModel"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -41,6 +41,9 @@
     </Page.Resources>
 
     <Grid>
+        <Grid.DataContext>
+            <local:ViewModel/>
+        </Grid.DataContext>
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Photos/ApartamentPhotos/login.jpg"/>
         </Grid.Background>
@@ -52,8 +55,15 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListView ItemsSource="" ItemTemplate="{StaticResource Template}">
-
+        <ListView ItemsSource="{Binding ParisAppList, Mode=TwoWay}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Name}"></TextBlock>
+                        <TextBlock Text="{Binding PricePerNight}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
 
         <Button x:Name="PreviousButton" Grid.Row="1" Width="200" Height="50" Content="Previous" FontSize="28" HorizontalAlignment="Center" Click="PreviousButton_Click" Background="#33293BA2" Foreground="White"/>
