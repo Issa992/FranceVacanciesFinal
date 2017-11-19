@@ -61,6 +61,7 @@
         <StackPanel Grid.Row="0" Grid.Column="1">
             <Button  Width="200" Height="50" Content="Add" FontSize="28" HorizontalAlignment="Center" Margin="0,20" Foreground="White" Background="#33293BA2"/>
             <Button  Width="200" Height="50" Content="Remove" FontSize="28" HorizontalAlignment="Center" Margin="0,0,0,20" Background="#33293BA2" Foreground="White"/>
+            <Button  Width="200" Height="50" Content="Edit" FontSize="28" HorizontalAlignment="Center" Margin="275,0,275,20" Background="#33293BA2" Foreground="White" Click="Button_Click"/>
             <TextBox PlaceholderText="Name of the apartment" HorizontalAlignment="Center"  Width="200" Height="50" FontSize="16"/>
         </StackPanel>
 
