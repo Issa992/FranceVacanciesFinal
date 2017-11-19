@@ -134,6 +134,7 @@
     <Compile Include="Uk.xaml.cs">
       <DependentUpon>Uk.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\NotifyPropertyChange.cs" />
     <Compile Include="ViewModel\ViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

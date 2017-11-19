@@ -10,17 +10,23 @@ using System.Collections.ObjectModel;
 
 namespace MainPage.ViewModel
 {
-    class ViewModel : INotifyPropertyChanged
+    class ViewModel : NotifyPropertyChange
     {
         #region properties
-        public event PropertyChangedEventHandler PropertyChanged;
+        
         public ObservableCollection<Customer> CustomersList { get; set; }
         public ObservableCollection<Appartment> ParisAppList { get; set; }
         public ObservableCollection<Appartment> AmsterdamAppList { get; set; }
         public ObservableCollection<Appartment> LondonAppList { get; set; }
-        public RelayCommand AddAppartmentCommand;
-        public RelayCommand DeleteAppartmentCommand;
-        public RelayCommand UpdateAppartmentCommand;
+        public RelayCommand ParisAddAppartmentCommand;
+        public RelayCommand AmsterdamAddAppartmentCommand;
+        public RelayCommand LondonAddAppartmentCommand;
+        public RelayCommand ParisDeleteAppartmentCommand;
+        public RelayCommand AmsterdamDeleteAppartmentCommand;
+        public RelayCommand LondonDeleteAppartmentCommand;
+        public RelayCommand LondonUpdateAppartmentCommand;
+        public RelayCommand AmsterdamUpdateAppartmentCommand;
+        public RelayCommand ParisUpdateAppartmentCommand;
         public Appartment SelectedAppartment
         {
             get => SelectedAppartment;
@@ -41,10 +47,11 @@ namespace MainPage.ViewModel
             ParisAppList = new ObservableCollection<Appartment>();
             AmsterdamAppList = new ObservableCollection<Appartment>();
             LondonAppList = new ObservableCollection<Appartment>();
+            AddTestables();
             AddNewAppartment = new Appartment();
             AddNewCustomer = new Customer();
-            AddAppartmentCommand = new RelayCommand(AddParisAppartment);
-            AddTestables();
+            
+            
 
 
         }
@@ -70,13 +77,10 @@ namespace MainPage.ViewModel
 
 
         #region Miscelenous
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+        
         public void AddTestables()
         {
-           ParisAppList.Add(new Appartment("owner1", "cottage", 45.50, false, false, true, "default"));
+            ParisAppList.Add(new Appartment("owner1", "cottage", 45.50, false, false, true, "default"));
             ParisAppList.Add(new Appartment("owner1", "cottage", 22.5, false, false, true, "default"));
             ParisAppList.Add(new Appartment("owner1", "cottage", 67.85, false, false, true, "default"));
             ParisAppList.Add(new Appartment("owner1", "cottage", 34.50, false, false, true, "default"));
