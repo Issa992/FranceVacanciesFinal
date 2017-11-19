@@ -30,6 +30,7 @@ namespace MainPage
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(AdminControls));
+            
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
