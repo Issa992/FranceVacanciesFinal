@@ -35,9 +35,21 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListView ItemsSource="" ItemTemplate="{StaticResource Template}">
+        <ListView ItemsSource="{Binding AmsterdamAppList}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Name}"></TextBlock>
+                        <TextBlock Text="{Binding PricePerNight}"></TextBlock>
+                        <TextBlock Text="{Binding Description}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
 
         </ListView>
+        <Button Content="Paris Appartments" Grid.Column="1" HorizontalAlignment="Left" Margin="34,28.5,0,0" Grid.Row="1" VerticalAlignment="Top" Height="78" Width="227" FontSize="18" FontWeight="Bold"/>
+        <Button Content="Main Page" Grid.Column="1" HorizontalAlignment="Left" Margin="441,28.5,0,0" VerticalAlignment="Top" Width="227" Grid.Row="1" Height="78" FontSize="18" FontWeight="Bold"/>
+        <Button Content="Go To customer list" HorizontalAlignment="Left" Margin="198,28.5,0,0" Grid.Row="1" VerticalAlignment="Top" Height="78" Width="227" FontSize="18" FontWeight="Bold"/>
 
     </Grid>
 
