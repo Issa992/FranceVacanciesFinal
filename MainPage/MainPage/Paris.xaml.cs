@@ -57,7 +57,7 @@ namespace MainPage
 
             ConnectedAnimationService.GetForCurrentView().PrepareToAnimate("image", DestinationImage);
             
-            Frame.Navigate(typeof(ParisFlat));
+            Frame.Navigate(typeof(ParisFlat), DestinationImage.SelectedItem);
         }
 
 

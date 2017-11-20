@@ -36,7 +36,7 @@ namespace MainPage.ViewModel
                 OnPropertyChanged(nameof(SelectedAppartment));
             }
         }
-        private Appartment _selectedApparment;
+        private static Appartment _selectedApparment;
         public Appartment AddNewAppartment;
         public Customer AddNewCustomer;
         #endregion
@@ -83,8 +83,10 @@ namespace MainPage.ViewModel
         {
             ParisAppList.Add(new Appartment("Apartment 1", "This is just short description, that says that this is realy awesome suite", 
                 45.50, false, false, true, @"Photos/ApartamentPhotos/la_house_interior_fireplace_picture_room_seat_luxury_fire_piano_table_31441_3840x2400.jpg"));
-            ParisAppList.Add(new Appartment("Apartment 2", "This is just short description, that says that this is realy awesome suite", 
-                22.5, false, false, true, "Photos/ApartamentPhotos/sofa_design_interior_design_apartment_room_brown_chair_bed_lamps_pillows_style_table_31489_3840x2400.jpg"));
+            ParisAppList.Add(new Appartment("Apartment 2", "This is just short description, that says that this is realy awesome suite. " +
+                "And just something more to show that this is diffrent app than a previous one. Just in case. " +
+                "We also need some more text so this is this text. Nothing realy for now is here", 
+                22.5, true, false, true, "Photos/ApartamentPhotos/sofa_design_interior_design_apartment_room_brown_chair_bed_lamps_pillows_style_table_31489_3840x2400.jpg"));
             ParisAppList.Add(new Appartment("Apartment 3", "This is just short description, that says that this is realy awesome suite", 
                 67.85, false, false, true, "Photos/ApartamentPhotos/sofa_design_interior_design_apartment_room_brown_chair_bed_pillows_style_fruit_31487_3840x2400.jpg"));
             ParisAppList.Add(new Appartment("Apartment 4", "This is just short description, that says that this is realy awesome suite",
