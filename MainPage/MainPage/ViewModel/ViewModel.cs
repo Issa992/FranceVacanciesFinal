@@ -21,7 +21,7 @@ namespace MainPage.ViewModel
         public RelayCommand ParisAddAppartmentCommand { get; set; }
         public RelayCommand AmsterdamAddAppartmentCommand;
         public RelayCommand LondonAddAppartmentCommand;
-        public RelayCommand ParisDeleteAppartmentCommand;
+        public RelayCommand ParisDeleteAppartmentCommand { get; set; }
         public RelayCommand AmsterdamDeleteAppartmentCommand;
         public RelayCommand LondonDeleteAppartmentCommand;
         public RelayCommand LondonUpdateAppartmentCommand;
@@ -37,7 +37,7 @@ namespace MainPage.ViewModel
             }
         }
         private static Appartment _selectedApparment;
-        public Appartment AddNewAppartment;
+        public Appartment AddNewAppartment { get; set; }
         public Customer AddNewCustomer;
         #endregion
         //-------------------------
@@ -51,8 +51,10 @@ namespace MainPage.ViewModel
             AddTestables();
             AddNewAppartment = new Appartment();
             AddNewCustomer = new Customer();
-            
-            
+            ParisDeleteAppartmentCommand = new RelayCommand(RemoveParisApp);
+            ParisAddAppartmentCommand = new RelayCommand(AddParisAppartment);
+
+
 
 
         }
@@ -71,6 +73,10 @@ namespace MainPage.ViewModel
         public void AddLondonAppartment()
         {
             LondonAppList.Add(AddNewAppartment);
+        }
+        public void RemoveParisApp()
+        {
+            ParisAppList.Remove(SelectedAppartment);
         }
 
 
