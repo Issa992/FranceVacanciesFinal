@@ -46,5 +46,10 @@ namespace MainPage
         {
 
         }
+        private void List_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+            Frame.Navigate(typeof(ParisFlat), List.SelectedItem);
+        }
     }
 }

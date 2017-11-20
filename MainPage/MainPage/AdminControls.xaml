@@ -61,8 +61,10 @@
             <ColumnDefinition Width="119*"/>
             <ColumnDefinition Width="31*"/>
         </Grid.ColumnDefinitions>
-        <ListView ItemsSource="{Binding ParisAppList}" Height="670" VerticalAlignment="Top" 
-                  Margin="0,0,325,0" Grid.RowSpan="4" SelectedItem="{Binding SelectedAppartment, Mode=TwoWay}" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+        <ListView x:Name="List" ItemsSource="{Binding ParisAppList}" Height="670" VerticalAlignment="Top" 
+                  Margin="0,0,325,0" Grid.RowSpan="4" SelectedItem="{Binding SelectedAppartment, Mode=TwoWay}" 
+                  ScrollViewer.VerticalScrollBarVisibility="Hidden" >
+            
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
