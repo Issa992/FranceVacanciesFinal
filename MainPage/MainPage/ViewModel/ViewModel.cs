@@ -18,7 +18,7 @@ namespace MainPage.ViewModel
         public ObservableCollection<Appartment> ParisAppList { get; set; }
         public ObservableCollection<Appartment> AmsterdamAppList { get; set; }
         public ObservableCollection<Appartment> LondonAppList { get; set; }
-        public RelayCommand ParisAddAppartmentCommand;
+        public RelayCommand ParisAddAppartmentCommand { get; set; }
         public RelayCommand AmsterdamAddAppartmentCommand;
         public RelayCommand LondonAddAppartmentCommand;
         public RelayCommand ParisDeleteAppartmentCommand;
