@@ -154,7 +154,7 @@
                     <ComboBoxItem Content="10"/>
                 </ComboBox>
                 <Button HorizontalAlignment="Left" Margin="316,179,0,0" VerticalAlignment="Top" FontFamily="Segoe MDL2 Assets" Content="&#xE716;" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF87C895" Height="44"/>
-                <Button HorizontalAlignment="Left" Margin="241,126,0,0" VerticalAlignment="Top" FontFamily="Segoe MDL2 Assets" Content="&#xE77B;" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF87C895" Height="44"/>
+                <Button HorizontalAlignment="Left" Margin="433,126,0,0" VerticalAlignment="Top" FontFamily="Segoe MDL2 Assets" Content="&#xE77B;" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="#FF87C895" Height="44"/>
                 <ToggleSwitch Header="" HorizontalAlignment="Left" Margin="157,179,0,0" VerticalAlignment="Top" Height="55" Width="64" Foreground="White"/>
                 
                 <Button Content="Button" HorizontalAlignment="Left" Margin="902,428,0,0" VerticalAlignment="Top" Height="150" Width="323" Click="Button_Click"/>
